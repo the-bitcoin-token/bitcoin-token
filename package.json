@@ -1,25 +1,21 @@
 {
-  "name": "@the-bitcoin-token/bitcoin-token",
-  "version": "0.0.1-dev",
+  "name": "bitcoin-token",
+  "license": "UNLICENSED",
+  "version": "0.0.1-alpha.1",
   "description": "Build smart contract powered apps",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/the-bitcoin-token/bitcoin-token.git"
+    "url": "https://github.com/the-bitcoin-token/bitcoin-token.git"
   },
   "keywords": [
-    "Bitcoin",
+    "bitcoin",
     "tokens",
     "smart",
     "contracts"
   ],
-  "author": "Clemens Ley",
-  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/the-bitcoin-token/bitcoin-token/issues"
   },
-  "homepage": "https://github.com/the-bitcoin-token/bitcoin-token#readme"
+  "homepage": "http://www.bitcointoken.com"
 }
