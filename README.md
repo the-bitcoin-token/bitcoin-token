@@ -16,7 +16,7 @@ You can find more information and developer documentation at <a href="http://www
 
 ## Example usage
 
-You can issue a token in Javascript. You can find more examples in the <a href="http://www.bitcointoken.com/docs">BitcoinToken docs</a>
+You can issue a token in Javascript. You can find more examples in the <a href="http://www.bitcointoken.com/docs">BitcoinToken docs</a>.
 
 ```
 const token = new BitcoinToken()
