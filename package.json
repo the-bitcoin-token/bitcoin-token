@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/the-bitcoin-token/bitcoin-token/issues"
   },
-  "homepage": "http://www.bitcointoken.com"
+  "homepage": "http://www.bitcointoken.com",
+  "dependencies": {
+    "bitcointoken": "0.0.1-alpha.3",
+    "bitcoinsource": "github:the-bitcoin-token/BitcoinSource#master",
+    "axios": "^0.18.0"
+  }
 }
