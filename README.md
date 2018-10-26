@@ -60,7 +60,7 @@ const address = wallet.getAddress()
 console.log('deposit address', address)
 ```
 
-The output is your BitcoinCash deposit address.
+The output is your Bitcoin Cash testnet deposit address.
 
 ```
 deposit address mgMdp3kjjfTJTEVMqA3XxNytFa4GC88E3Z
@@ -68,7 +68,7 @@ deposit address mgMdp3kjjfTJTEVMqA3XxNytFa4GC88E3Z
 
  The wallet is generated deterministically from your hd private key, so you will see the same output if you run the file multiple times.
 
-Before you can use the wallet, you need to fund it. Copy the address and paste it into a <a href="">Bitcoin Cash Testnet Faucet</a>to send testnet coins to it.
+Before you can use the wallet, you need to fund it. Copy the address and paste it into a <a href="">Bitcoin Cash Testnet Faucet</a> to send testnet coins to it.
 
 To check your balance and send some bitcoin change <code>index.js</code> to contain the following code. It generates a second wallet from random and sends 10000 satoshis to it.
 
@@ -147,4 +147,4 @@ const friendsPublicKey = friendsWallet.getPublicKey()
 
 ```
 
-You can now build blockchain enabled apps. See the <a href="http://www.bitcointoken.com/docs">BitcoinToken Docs</a> for more information about BitcoinToken.
+You can now build blockchain enabled apps. See the <a href="http://www.bitcointoken.com/docs">BitcoinToken Docs</a> for more information.
