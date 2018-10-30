@@ -69,7 +69,7 @@ deposit address mgMdp3kjjfTJTEVMqA3XxNytFa4GC88E3Z
 
  The wallet is generated deterministically from your hd private key, so you will see the same output if you run the file multiple times.
 
-Before you can send Bitcoin Cash, you need to fund your wallet. Copy and paste the address into a <a href="">Bitcoin Cash Testnet Faucet</a> to send testnet coins to the wallet.
+Before you can send Bitcoin Cash, you need to fund your wallet. Copy and paste the address into a [Bitcoin Cash Testnet Faucet](https://coinfaucet.eu/en/bch-testnet/) to send testnet coins to the wallet.
 
 To check your balance and send some bitcoin change <code>index.js</code> to contain the following code. It generates a second wallet from random and sends 10000 satoshis to it.
 
@@ -120,7 +120,7 @@ In case you want to restrict read access to your data we recommend to encrypt th
 
 ### Issue a token using BitcoinToken
 
-BitcoinToken can issue, send, and receive token. You can generate a BitcoinToken object from a BitcoinDb object by passing it into the constructor. To issue a token call <code>token.create()</code>. To send the token to a friend call <code>token.send()</code>.
+BitcoinToken can issue, send, and receive token. Generate a BitcoinToken object from a BitcoinDb object by passing it into the constructor. To issue a token call <code>token.create()</code>. To send the token to a friend call <code>token.send()</code>.
 
 
 ```
