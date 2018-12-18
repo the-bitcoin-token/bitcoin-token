@@ -1,7 +1,7 @@
 {
   "name": "bitcointoken",
   "license": "UNLICENSED",
-  "version": "v0.1.0-alpha.1",
+  "version": "v0.2.0-alpha.0",
   "description": "Build smart contract powered apps",
   "main": "index.js",
   "repository": {
