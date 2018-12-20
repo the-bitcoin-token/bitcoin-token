@@ -2,18 +2,14 @@
 
 The BitcoinToken library is a collection of tools that make it easy to integrate Bitcoin into web applications.
 
- * **BitcoinSource** a readable JS implementation of Bitcoin
- * **BitcoinWallet** send, store, and receive Bitcoin
- * **BitcoinDb** store data on the blockchain
- * **BitcoinToken** issue tokens
+ * **[BitcoinSource](https://github.com/the-bitcoin-token/BitcoinSource)** a readable JS implementation of Bitcoin
+ * **[BitcoinWallet](http://bitcointoken.com/docs#bitcoinwallet)** send, store, and receive Bitcoin
+ * **[BitcoinDb](http://bitcointoken.com/docs#bitcoindb)** store data on the blockchain
+ * **[BitcoinToken](http://bitcointoken.com/docs#bitcointoken)** issue tokens
 
 The docs are at [www.bitcointoken.com/docs](https://www.bitcointoken.com/docs)
 
-
 ## Install
-
-You need <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">node.js and npm</a> installed. Then install BitcoinToken using
-
 
 ````terminal
 npm i bitcointoken
@@ -100,9 +96,10 @@ You have to fund your wallet. First check that the same wallet is generated ever
 
 If so you can fund that address using a [testnet faucet](https://coinfaucet.eu/en/bch-testnet/).
 
-Otherwise you need to initialize your object from a mnemonic. To generate a mnemonic, create the file <code>generate-mnemonic.js</code> and run it using <code> node --experimental-repl-await generate-mnemonic.js</code>. Now you can generate your object using the logged mnemonic using <code>Wallet.fromMnemonic()</code> and fund it using the [testnet faucet](https://coinfaucet.eu/en/bch-testnet/)
+Otherwise you need to initialize your object from a mnemonic. To generate a mnemonic, create the file <code>get-random-mnemonic.js</code> and run it using <code> node --experimental-repl-await generate-mnemonic.js</code>. Now you can generate your object using the logged mnemonic using <code>Wallet.fromMnemonic()</code> and fund it using the [testnet faucet](https://coinfaucet.eu/en/bch-testnet/)
 
 ````javascript
+// get-random-mnemonic.js
 const { Wallet } = require('bitcointoken')
 console.log(Wallet.getRandomMnemonic())
 ````
