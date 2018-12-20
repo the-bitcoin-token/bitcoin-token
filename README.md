@@ -7,7 +7,7 @@ The BitcoinToken library is a collection of tools that make it easy to integrate
  * **BitcoinDb** store data on the blockchain
  * **BitcoinToken** issue tokens
 
-The docs are at [www.bitcointoken.com/docs](www.bitcointoken.com/docs)
+The docs are at [www.bitcointoken.com/docs](https://www.bitcointoken.com/docs)
 
 
 ## Install
