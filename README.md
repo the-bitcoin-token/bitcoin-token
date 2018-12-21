@@ -1,13 +1,13 @@
 # Bitcoin Token
 
-The BitcoinToken library is a collection of tools that make it easy to integrate Bitcoin into web applications.
+BitcoinToken is a library that makes it easy to integrate Bitcoin into web applications. It consists of three tools
 
  * **[BitcoinSource](https://github.com/the-bitcoin-token/BitcoinSource)** a readable JS implementation of Bitcoin
  * **[BitcoinWallet](http://www.bitcointoken.com/docs#bitcoinwallet)** send, store, and receive Bitcoin
  * **[BitcoinDb](http://www.bitcointoken.com/docs#bitcoindb)** store data on the blockchain
  * **[BitcoinToken](http://www.bitcointoken.com/docs#bitcointoken)** issue tokens
 
-More information is at [www.bitcointoken.com/docs](http://www.bitcointoken.com/docs)
+More information at [www.bitcointoken.com](http://www.bitcointoken.com) and [www.bitcointoken.com/docs](http://www.bitcointoken.com/docs).
 
 ## Install
 
@@ -15,7 +15,7 @@ More information is at [www.bitcointoken.com/docs](http://www.bitcointoken.com/d
 npm i bitcointoken
 ````
 
-If you only want to use BitcoinWallet you are done. If you want to use BitcoinDb or BitcoinToken you need to install and run a non-standard server in a separate terminal window.
+If you only want to use BitcoinWallet you are done. If you want to use BitcoinDb or BitcoinToken as well you need to install and run a non-standard server in a separate terminal window.
 
 ### Install and run a non-standard server
 
@@ -28,10 +28,9 @@ docker-compose up
 ````
 
 
-
 ## Run in Node
 
-After installing BitcoinToken, create a file <code>index.js</code>
+After installing BitcoinToken, create a file <code>index.js</code> and run it with `node index.js`.
 
 ````javascript
 // index.js
@@ -40,14 +39,6 @@ const { Wallet } = require('bitcointoken')
 const wallet = new Wallet()
 console.log(`address: ${wallet.getAddress()}`)
 ````
-
-Run the code
-
-````shell
-node index.js
-````
-
-The output should be similar to `address: mwZd1bgRYhxY4JLyx1sdEGBYFZnXVDvgmp`
 
 
 ## Run in the browser
@@ -72,34 +63,15 @@ document.body.innerHTML = `address: ${wallet.getAddress()}`
 </html>
 ````
 
-Install and run browserify
+Install and run browserify, then open <code>index.html</code> in a web browser.
 
 ````shell
 npm install -g browserify
 browserify index.js > bundle.js
 ````
 
-Open <code>index.html</code> in a web browser
-
 
 ## Troubleshooting
 
-If you have a problem that is not discussed here, please let us know in the <a href="https://t.me/joinchat/FMrjOUWRuUkNuIt7zJL8tg">Telegram group</a>.
+Ask in our [Telegram group](https://t.me/joinchat/FMrjOUWRuUkNuIt7zJL8tg) or have a look at the [documentation](http://www.bitcointoken.com/docs).
 
-### "Communication error: Service unavailable"
-
-The problem is most likely that you are not running the non-standard server.
-
-### "Error: Insufficient balance in address ..."
-
-You have to fund your wallet. First check that the same wallet is generated every time you run your code: Run it multiple times and check if the  same address is logged every time.
-
-If so you can fund that address using a [testnet faucet](https://coinfaucet.eu/en/bch-testnet/).
-
-Otherwise you need to initialize your object from a mnemonic. To generate a mnemonic, create the file <code>get-random-mnemonic.js</code> and run it using <code> node --experimental-repl-await generate-mnemonic.js</code>. Now you can generate your object using the logged mnemonic using <code>Wallet.fromMnemonic()</code> and fund it using the [testnet faucet](https://coinfaucet.eu/en/bch-testnet/)
-
-````javascript
-// get-random-mnemonic.js
-const { Wallet } = require('bitcointoken')
-console.log(Wallet.getRandomMnemonic())
-````
