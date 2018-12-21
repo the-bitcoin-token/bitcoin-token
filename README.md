@@ -3,11 +3,11 @@
 The BitcoinToken library is a collection of tools that make it easy to integrate Bitcoin into web applications.
 
  * **[BitcoinSource](https://github.com/the-bitcoin-token/BitcoinSource)** a readable JS implementation of Bitcoin
- * **[BitcoinWallet](http://bitcointoken.com/docs#bitcoinwallet)** send, store, and receive Bitcoin
- * **[BitcoinDb](http://bitcointoken.com/docs#bitcoindb)** store data on the blockchain
- * **[BitcoinToken](http://bitcointoken.com/docs#bitcointoken)** issue tokens
+ * **[BitcoinWallet](http://www.bitcointoken.com/docs#bitcoinwallet)** send, store, and receive Bitcoin
+ * **[BitcoinDb](http://www.bitcointoken.com/docs#bitcoindb)** store data on the blockchain
+ * **[BitcoinToken](http://www.bitcointoken.com/docs#bitcointoken)** issue tokens
 
-The docs are at [www.bitcointoken.com/docs](http://www.bitcointoken.com/docs)
+More information is at [www.bitcointoken.com/docs](http://www.bitcointoken.com/docs)
 
 ## Install
 
